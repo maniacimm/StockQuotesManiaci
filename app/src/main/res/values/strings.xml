@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StockQuotes-Maniaci</string>
+    <string name="stock_Symbol">Enter stock symbol:</string>
+    <string name="symbolTxt">Symbol:</string>
+    <string name="nameTxt">Name:</string>
+    <string name="last_trade_price_txt">Last Trade Price:</string>
+    <string name="last_trade_time_txt">Last Trade Time:</string>
+    <string name="changeTxt">Change:</string>
+    <string name="txt_52_week_range">52 Week Range:</string>
+</resources>
