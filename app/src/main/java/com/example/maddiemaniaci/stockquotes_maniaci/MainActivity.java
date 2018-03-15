@@ -10,6 +10,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,25 +43,41 @@ public class MainActivity extends AppCompatActivity {
             try {
                 stock.load();
             } catch (Exception e) {
-                Log.i("BOOTY", e.getMessage());
+                Log.i("ERROR", e.getMessage());
             }
             return stock;
         }
 
         @Override
         protected void onPostExecute(Stock stock) {
-            TextView symbol = findViewById(R.id.symbolTextView);
-            symbol.setText(stock.getSymbol());
-            TextView name = findViewById(R.id.NameTextView);
-            name.setText(stock.getName());
-            TextView lastPrice = findViewById(R.id.Last_Trade_Price_TextView);
-            lastPrice.setText(stock.getLastTradePrice());
-            TextView lastTime = findViewById(R.id.LastTradeTime_TextView);
-            lastTime.setText(stock.getLastTradeTime());
-            TextView change = findViewById(R.id.ChangeTextView);
-            change.setText(stock.getChange());
-            TextView range = findViewById(R.id.WeekRageTextView);
-            range.setText(stock.getRange());
+            if (stock != null && stock.getName() != null && !stock.getName().equals("")) {
+                TextView symbol = findViewById(R.id.symbolTextView);
+                symbol.setText(stock.getSymbol());
+                TextView nameView = findViewById(R.id.NameTextView);
+                nameView.setText(stock.getName());
+                TextView lastPrice = findViewById(R.id.Last_Trade_Price_TextView);
+                lastPrice.setText(stock.getLastTradePrice());
+                TextView lastTime = findViewById(R.id.LastTradeTime_TextView);
+                lastTime.setText(stock.getLastTradeTime());
+                TextView change = findViewById(R.id.ChangeTextView);
+                change.setText(stock.getChange());
+                TextView range = findViewById(R.id.WeekRageTextView);
+                range.setText(stock.getRange());
+            } else {
+                Toast.makeText(MainActivity.this, "Error retrieving stock data", Toast.LENGTH_SHORT).show();
+                TextView symbol = findViewById(R.id.symbolTextView);
+                symbol.setText("");
+                TextView nameView = findViewById(R.id.NameTextView);
+                nameView.setText("");
+                TextView lastPrice = findViewById(R.id.Last_Trade_Price_TextView);
+                lastPrice.setText("");
+                TextView lastTime = findViewById(R.id.LastTradeTime_TextView);
+                lastTime.setText("");
+                TextView change = findViewById(R.id.ChangeTextView);
+                change.setText("");
+                TextView range = findViewById(R.id.WeekRageTextView);
+                range.setText("");
+            }
         }
 
         @Override

@@ -34,7 +34,7 @@
 
     <TextView
         android:id="@+id/symbolTxt"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="52dp"
@@ -44,7 +44,7 @@
 
     <TextView
         android:id="@+id/nameTxt"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/marginStart16"
         android:layout_marginTop="@dimen/margin20"
@@ -54,7 +54,7 @@
 
     <TextView
         android:id="@+id/tradePriceTxt"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/marginStart16"
         android:layout_marginTop="@dimen/margin20"
@@ -64,8 +64,8 @@
 
     <TextView
         android:id="@+id/tradeTimeTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="17dp"
         android:layout_marginStart="@dimen/marginStart16"
         android:layout_marginTop="@dimen/margin20"
         android:text="@string/last_trade_time_txt"
@@ -74,7 +74,7 @@
 
     <TextView
         android:id="@+id/changeTxt"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/marginStart16"
         android:layout_marginTop="@dimen/margin20"
@@ -84,7 +84,7 @@
 
     <TextView
         android:id="@+id/rangeTxt"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="@dimen/height17"
         android:layout_marginBottom="@dimen/margin236"
         android:layout_marginStart="@dimen/marginStart16"
@@ -101,8 +101,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toEndOf="@+id/symbolTxt"
         app:layout_constraintTop_toTopOf="@+id/symbolTxt" />
 
@@ -112,9 +112,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.244"
         app:layout_constraintStart_toEndOf="@+id/nameTxt"
         app:layout_constraintTop_toTopOf="@+id/nameTxt" />
 
@@ -124,9 +123,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toEndOf="@+id/tradePriceTxt"
         app:layout_constraintTop_toTopOf="@+id/tradePriceTxt" />
 
@@ -136,9 +134,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toEndOf="@+id/tradeTimeTxt"
         app:layout_constraintTop_toTopOf="@+id/tradeTimeTxt" />
 
@@ -148,9 +145,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toEndOf="@+id/changeTxt"
         app:layout_constraintTop_toTopOf="@+id/changeTxt" />
 
@@ -158,14 +154,10 @@
         android:id="@+id/WeekRageTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toEndOf="@+id/rangeTxt"
-        app:layout_constraintTop_toTopOf="@+id/rangeTxt"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/rangeTxt" />
 </android.support.constraint.ConstraintLayout>

@@ -1,6 +1,8 @@
 package com.example.maddiemaniaci.stockquotes_maniaci;
 
+import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONObject;
 
