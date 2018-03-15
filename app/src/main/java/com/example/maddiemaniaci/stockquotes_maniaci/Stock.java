@@ -16,7 +16,7 @@ import java.net.URLConnection;
  * Created by maddiemaniaci on 3/13/18.
  */
 
-public class Stock implements Serializable{
+public class Stock implements Serializable {
     private static final boolean DEBUG = true;
     private static final String TAG_PREFIX = "stockquotes";
     private String symbol;
@@ -26,7 +26,7 @@ public class Stock implements Serializable{
     private String range;
     private String name;
 
-    public Stock(String symbol){
+    public Stock(String symbol) {
         this.symbol = symbol.toUpperCase();
         if (DEBUG) {
             Log.i(TAG_PREFIX + "Stock()", "symbol = " + symbol);

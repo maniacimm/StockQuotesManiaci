@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">StockQuotes-Maniaci</string>
-    <string name="stock_Symbol">Enter stock symbol:</string>
+    <string name="stock_Symbol">Enter Stock Symbol:</string>
     <string name="symbolTxt">Symbol:</string>
     <string name="nameTxt">Name:</string>
     <string name="last_trade_price_txt">Last Trade Price:</string>
